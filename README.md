@@ -1,150 +1,104 @@
-# 🛡️ SOC Home Lab
+# 🛡️ SOC Home Lab using Splunk Enterprise
 
-A practical Security Operations Center (SOC) Home Lab built to simulate real-world security monitoring using **Splunk Enterprise**, **Sysmon**, and **Splunk Universal Forwarder**.
-
-This project focuses on Windows endpoint visibility, log collection, dashboard development, and custom detection rules using SPL.
+> A hands-on Security Operations Center (SOC) Home Lab built using Splunk Enterprise, Sysmon, and Splunk Universal Forwarder for Windows endpoint monitoring and threat detection.
 
 ---
 
-# 📖 Project Overview
+## 📌 Project Summary
 
-This lab demonstrates how Windows security events can be collected, forwarded, and analyzed in Splunk.
+This project demonstrates how Windows endpoint telemetry can be collected, forwarded, monitored, and investigated using Splunk Enterprise.
 
-The environment includes:
-
-- Windows 11 Virtual Machine
-- Kali Linux
-- Splunk Enterprise
-- Splunk Universal Forwarder
-- Sysmon
+The goal was to simulate a real SOC environment and develop practical skills in security monitoring, log analysis, and detection engineering.
 
 ---
 
-# 🏗️ Lab Architecture
+## 🏗️ Lab Environment
 
-```text
-                 Kali Linux
-                      │
-                      │
-        (Attack / Testing Machine)
-                      │
-                      ▼
-           Windows 11 Virtual Machine
-                + Sysmon Installed
-                      │
-                      ▼
-       Splunk Universal Forwarder
-                      │
-                      ▼
-            Splunk Enterprise SIEM
-          ┌────────────────────────┐
-          │ Monitoring Dashboard   │
-          │ Detection Dashboard    │
-          └────────────────────────┘
-```
+| Component | Purpose |
+|----------|---------|
+| Windows 11 VM | Endpoint |
+| Kali Linux | Testing Machine |
+| Sysmon | Endpoint Telemetry |
+| Splunk Universal Forwarder | Log Forwarding |
+| Splunk Enterprise | SIEM Platform |
 
 ---
 
-# ⚙️ Technologies Used
+## 🔍 Monitoring Dashboard
 
-- Splunk Enterprise
-- Splunk Universal Forwarder
-- Sysmon
-- Windows Event Logs
-- SPL (Search Processing Language)
-- Windows 11
-- Kali Linux
-
----
-
-# 📊 Monitoring Dashboard
-
-The monitoring dashboard provides visibility into:
+The Monitoring Dashboard provides visibility into:
 
 - Total Events
 - Process Creation
 - DNS Queries
 - Network Connections
 - Event Timeline
-- Network Timeline
 - Running Processes
-- Destination Ports
-- Connected Processes
 - Parent Processes
-- PowerShell & CMD Activity
-- DNS Activity
+- PowerShell Activity
 - Recent Network Connections
 
----
+### Screenshots
 
-## Dashboard Screenshots
+![Monitoring](monitoring-1.jpeg)
 
-### Monitoring Dashboard
+![Monitoring](monitoring-2.jpeg)
 
-![Monitoring 1](monitoring-1.jpeg)
+![Monitoring](monitoring-3.jpeg)
 
-![Monitoring 2](monitoring-2.jpeg)
-
-![Monitoring 3](monitoring-3.jpeg)
-
-![Monitoring 4](monitoring-4.jpeg)
+![Monitoring](monitoring-4.jpeg)
 
 ---
 
-# 🚨 Detection Dashboard
+## 🚨 Detection Dashboard
 
-Custom detection rules were created for:
+Detection rules were created using SPL to identify:
 
 - PowerShell Execution
 - Command Prompt Execution
 - Encoded PowerShell
-- Registry Persistence
+- Registry Changes
 - File Creation
 - DNS Requests
 - Network Connections
 - Executable Downloads
 
----
+### Screenshots
 
-## Detection Screenshots
+![Detection](detection-1.jpeg)
 
-![Detection 1](detection-1.jpeg)
+![Detection](detection-2.jpeg)
 
-![Detection 2](detection-2.jpeg)
-
-![Detection 3](detection-3.jpeg)
+![Detection](detection-3.jpeg)
 
 ---
 
-# 🎯 Skills Demonstrated
+## 🛠 Skills Gained
 
-- SIEM Monitoring
-- Windows Event Analysis
-- Threat Detection
-- Log Collection
+- Splunk Enterprise
+- SPL Queries
 - Sysmon Configuration
-- SPL Query Development
-- Dashboard Development
-- Security Monitoring
-- Blue Team Fundamentals
+- Windows Event Analysis
+- SIEM Monitoring
+- Detection Engineering
+- Threat Hunting Fundamentals
 
 ---
 
-# 📌 Future Improvements
+## 🚀 Future Improvements
 
-- Windows Server
 - Active Directory
+- Windows Server
 - MITRE ATT&CK Mapping
 - Splunk Alerts
-- Threat Hunting Dashboard
-- Detection Engineering
+- Incident Response Playbooks
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Firas Saud**
 
 Information Technology Student
 
-Interested in SOC • Blue Team • Cybersecurity
+Saudi Arabia

@@ -1,12 +1,16 @@
-# SOC Home Lab
+# 🛡️ SOC Home Lab
 
-## Overview
+A practical Security Operations Center (SOC) Home Lab built to simulate real-world security monitoring using **Splunk Enterprise**, **Sysmon**, and **Splunk Universal Forwarder**.
 
-This project demonstrates a Security Operations Center (SOC) Home Lab built using Splunk Enterprise, Sysmon, and Splunk Universal Forwarder to collect, monitor, and analyze Windows security events.
+This project focuses on Windows endpoint visibility, log collection, dashboard development, and custom detection rules using SPL.
 
 ---
 
-## Lab Architecture
+# 📖 Project Overview
+
+This lab demonstrates how Windows security events can be collected, forwarded, and analyzed in Splunk.
+
+The environment includes:
 
 - Windows 11 Virtual Machine
 - Kali Linux
@@ -16,18 +20,44 @@ This project demonstrates a Security Operations Center (SOC) Home Lab built usin
 
 ---
 
-## Technologies Used
+# 🏗️ Lab Architecture
+
+```text
+                 Kali Linux
+                      │
+                      │
+        (Attack / Testing Machine)
+                      │
+                      ▼
+           Windows 11 Virtual Machine
+                + Sysmon Installed
+                      │
+                      ▼
+       Splunk Universal Forwarder
+                      │
+                      ▼
+            Splunk Enterprise SIEM
+          ┌────────────────────────┐
+          │ Monitoring Dashboard   │
+          │ Detection Dashboard    │
+          └────────────────────────┘
+```
+
+---
+
+# ⚙️ Technologies Used
 
 - Splunk Enterprise
 - Splunk Universal Forwarder
 - Sysmon
 - Windows Event Logs
 - SPL (Search Processing Language)
-- VirtualBox / VMware
+- Windows 11
+- Kali Linux
 
 ---
 
-## Monitoring Dashboard
+# 📊 Monitoring Dashboard
 
 The monitoring dashboard provides visibility into:
 
@@ -35,21 +65,35 @@ The monitoring dashboard provides visibility into:
 - Process Creation
 - DNS Queries
 - Network Connections
-- Events Timeline
+- Event Timeline
 - Network Timeline
 - Running Processes
 - Destination Ports
 - Connected Processes
 - Parent Processes
 - PowerShell & CMD Activity
-- DNS Query Activity
+- DNS Activity
 - Recent Network Connections
 
 ---
 
-## Detection Rules
+## Dashboard Screenshots
 
-The SOC Home Lab includes custom SPL detection rules for:
+### Monitoring Dashboard
+
+![Monitoring 1](monitoring-1.jpeg)
+
+![Monitoring 2](monitoring-2.jpeg)
+
+![Monitoring 3](monitoring-3.jpeg)
+
+![Monitoring 4](monitoring-4.jpeg)
+
+---
+
+# 🚨 Detection Dashboard
+
+Custom detection rules were created for:
 
 - PowerShell Execution
 - Command Prompt Execution
@@ -58,86 +102,49 @@ The SOC Home Lab includes custom SPL detection rules for:
 - File Creation
 - DNS Requests
 - Network Connections
-- Executables from Downloads
+- Executable Downloads
 
 ---
 
-## Skills Demonstrated
+## Detection Screenshots
+
+![Detection 1](detection-1.jpeg)
+
+![Detection 2](detection-2.jpeg)
+
+![Detection 3](detection-3.jpeg)
+
+---
+
+# 🎯 Skills Demonstrated
 
 - SIEM Monitoring
-- Threat Detection
 - Windows Event Analysis
-- Sysmon Configuration
+- Threat Detection
 - Log Collection
+- Sysmon Configuration
 - SPL Query Development
+- Dashboard Development
 - Security Monitoring
-- Incident Investigation
+- Blue Team Fundamentals
 
 ---
 
-## Project Goals
-
-- Build a functional SOC Home Lab.
-- Collect Windows security telemetry.
-- Monitor endpoint activity using Splunk.
-- Create custom detection rules.
-- Improve blue team investigation skills.
-
----
-
-## Screenshots
-
-Monitoring Dashboard
-
-*(Screenshots will be added here.)*
-
-Detection Dashboard
-
-*(Screenshots will be added here.)*
-
----
-
-## Future Improvements
+# 📌 Future Improvements
 
 - Windows Server
 - Active Directory
-- Sysmon Custom Rules
-- Splunk Alerts
 - MITRE ATT&CK Mapping
+- Splunk Alerts
 - Threat Hunting Dashboard
+- Detection Engineering
 
 ---
 
-## Author
+# 👨‍💻 Author
 
 **Firas Saud**
 
 Information Technology Student
 
-Saudi Arabia
-## Monitoring Dashboard
-
-### Overview
-![Monitoring 1](monitoring-1.jpeg)
-
-### Process & Network Monitoring
-![Monitoring 2](monitoring-2.jpeg)
-
-### Activity Monitoring
-![Monitoring 3](monitoring-3.jpeg)
-
-### Recent Network Activity
-![Monitoring 4](monitoring-4.jpeg)
-
----
-
-## Detection Dashboard
-
-### Detection Rules
-![Detection 1](detection-1.jpeg)
-
-### Detection Events
-![Detection 2](detection-2.jpeg) 
-
-### Registry & File Detection
-![Detection 3](detection-3.jpeg)
+Interested in SOC • Blue Team • Cybersecurity

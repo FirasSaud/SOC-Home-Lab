@@ -1,32 +1,41 @@
 # 🛡️ SOC Home Lab using Splunk Enterprise
 
-> A hands-on Security Operations Center (SOC) Home Lab built using Splunk Enterprise, Sysmon, and Splunk Universal Forwarder for Windows endpoint monitoring and threat detection.
+A hands-on Security Operations Center (SOC) Home Lab built using **Splunk Enterprise**, **Sysmon**, and **Splunk Universal Forwarder** for Windows endpoint monitoring, log analysis, and threat detection.
 
 ---
 
-## 📌 Project Summary
+# 📌 Project Summary
 
-This project demonstrates how Windows endpoint telemetry can be collected, forwarded, monitored, and investigated using Splunk Enterprise.
+This project simulates a real-world Security Operations Center (SOC) environment by collecting Windows endpoint telemetry and analyzing security events using Splunk Enterprise.
 
-The goal was to simulate a real SOC environment and develop practical skills in security monitoring, log analysis, and detection engineering.
+The primary objective was to strengthen practical skills in:
+
+- Security Monitoring
+- Windows Event Analysis
+- Threat Detection
+- Dashboard Development
+- Detection Engineering
+- SPL Query Development
 
 ---
 
-## 🏗️ Lab Environment
+# 🏗️ Lab Environment
 
 | Component | Purpose |
-|----------|---------|
-| Windows 11 VM | Endpoint |
-| Kali Linux | Testing Machine |
-| Sysmon | Endpoint Telemetry |
-| Splunk Universal Forwarder | Log Forwarding |
+|-----------|---------|
+| Windows 11 Virtual Machine | Endpoint Monitoring |
+| Kali Linux | Attack Simulation & Testing |
+| Sysmon | Windows Endpoint Telemetry |
+| Splunk Universal Forwarder | Log Collection & Forwarding |
 | Splunk Enterprise | SIEM Platform |
 
 ---
 
-## 🔍 Monitoring Dashboard
+# 🔍 Monitoring Dashboard
 
-The Monitoring Dashboard provides visibility into:
+The Monitoring Dashboard provides real-time visibility into Windows endpoint activity.
+
+### Features
 
 - Total Events
 - Process Creation
@@ -38,67 +47,72 @@ The Monitoring Dashboard provides visibility into:
 - PowerShell Activity
 - Recent Network Connections
 
-### Screenshots
+## Dashboard Screenshots
 
-![Monitoring](monitoring-1.jpeg)
+![Monitoring Dashboard](monitoring-1.jpeg)
 
-![Monitoring](monitoring-2.jpeg)
+![Monitoring Dashboard](monitoring-2.jpeg)
 
-![Monitoring](monitoring-3.jpeg)
+![Monitoring Dashboard](monitoring-3.jpeg)
 
-![Monitoring](monitoring-4.jpeg)
+![Monitoring Dashboard](monitoring-4.jpeg)
 
 ---
 
-## 🚨 Detection Dashboard
+# 🚨 Detection Dashboard
 
-Detection rules were created using SPL to identify:
+Custom SPL detection rules were developed to identify suspicious endpoint activity.
+
+### Detection Rules
 
 - PowerShell Execution
 - Command Prompt Execution
-- Encoded PowerShell
-- Registry Changes
-- File Creation
+- Encoded PowerShell Detection
+- Registry Persistence
+- File Creation Monitoring
 - DNS Requests
 - Network Connections
 - Executable Downloads
 
-### Screenshots
+## Dashboard Screenshots
 
-![Detection](detection-1.jpeg)
+![Detection Dashboard](detection-1.jpeg)
 
-![Detection](detection-2.jpeg)
+![Detection Dashboard](detection-2.jpeg)
 
-![Detection](detection-3.jpeg)
+![Detection Dashboard](detection-3.jpeg)
 
 ---
 
-## 🛠 Skills Gained
+# 🛠️ Skills Demonstrated
 
 - Splunk Enterprise
-- SPL Queries
+- Search Processing Language (SPL)
 - Sysmon Configuration
 - Windows Event Analysis
 - SIEM Monitoring
-- Detection Engineering
-- Threat Hunting Fundamentals
+- Threat Detection
+- Dashboard Development
+- Log Collection & Normalization
+- Blue Team Fundamentals
 
 ---
 
-## 🚀 Future Improvements
+# 🚀 Future Improvements
 
-- Active Directory
-- Windows Server
+- Windows Server Integration
+- Active Directory Deployment
 - MITRE ATT&CK Mapping
-- Splunk Alerts
+- Splunk Alerting
+- Threat Hunting Dashboard
 - Incident Response Playbooks
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Firas Saud**
 
 Information Technology Student
 
-Saudi Arabia
+Interested in Cybersecurity, SOC Operations, and Blue Teaming.

@@ -1,3 +1,9 @@
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Splunk](https://img.shields.io/badge/SIEM-Splunk-65A637)
+![Sysmon](https://img.shields.io/badge/Telemetry-Sysmon-red)
+![Windows](https://img.shields.io/badge/Platform-Windows%2011-0078D4)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
 # 🛡️ SOC Home Lab using Splunk Enterprise
 
 A hands-on Security Operations Center (SOC) Home Lab built using **Splunk Enterprise**, **Sysmon**, and **Splunk Universal Forwarder** for Windows endpoint monitoring, log analysis, and threat detection.

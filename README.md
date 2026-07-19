@@ -115,3 +115,29 @@ Detection Dashboard
 Information Technology Student
 
 Saudi Arabia
+## Monitoring Dashboard
+
+### Overview
+![Monitoring 1](monitoring-1.jpeg)
+
+### Process & Network Monitoring
+![Monitoring 2](monitoring-2.jpeg)
+
+### Activity Monitoring
+![Monitoring 3](monitoring-3.jpeg)
+
+### Recent Network Activity
+![Monitoring 4](monitoring-4.jpeg)
+
+---
+
+## Detection Dashboard
+
+### Detection Rules
+![Detection 1](detection-1.jpeg)
+
+### Detection Events
+![Detection 2](detection-2.jpeg)
+
+### Registry & File Detection
+![Detection 3](detection-3.jpeg)

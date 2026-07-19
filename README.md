@@ -137,7 +137,7 @@ Saudi Arabia
 ![Detection 1](detection-1.jpeg)
 
 ### Detection Events
-![Detection 2](detection-2.jpeg)
+![Detection 2](detection-2.jpeg) 
 
 ### Registry & File Detection
 ![Detection 3](detection-3.jpeg)
